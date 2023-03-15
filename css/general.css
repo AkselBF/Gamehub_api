@@ -1,0 +1,19 @@
+/*body and fonts*/
+body {
+  background-color: #141414;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Goldman";
+  font-weight: lighter;
+  text-align: center;
+  color: #5CAFFD;
+}
