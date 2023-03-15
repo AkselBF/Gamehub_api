@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="added-products" content="width=device-width, initial-scale=1.0">
+  <title>Cart page</title>
+  <link rel="stylesheet" href="../css/cart.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <a href="../index.html"><img src="../images/GameHub_Logo.png" class="logo"></a>
+    <input class="burgermenu" type="checkbox" id="burgermenu"/>
+    <label class="icon" for="burgermenu"><span class="burgerline"></span></label>
+    <!--Menu-->
+    <nav class="navi">
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/games.html">Games</a></li>
+        <li><a href="../html/about_us.html">About us</a></li>
+        <li><a href="../html/contact_us.html">Contact us</a></li>
+        <li><a class="active"><img src="../images/GameHub_cartLogo.png" class="shop" href="#cart"> Cart</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="top">
+      <h2 class="title">Cart</h2>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="gamebox">
+          <img class="game" src="../images/GameHub_ZeldaBotwGame_2.jpg">
+          <div class="infobox">
+            <h3 class="info">Video game:</h3>
+            <p class="text">The legend of Zelda: BotW</p>
+  
+            <h3 class="info">Delivery time:</h3>
+            <p class="text">7 days</p>
+  
+            <h3 class="info">Price</h3>
+            <p class="text">599kr</p>
+  
+            <a class="cancel-button">
+              <h3 class="cancel">Cancel</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h2 class="sum">Product summation</h2>
+        <div class="texts">
+          <h3 class="desc">Product amount: </h3><p class="num"> 1x</p><br>
+          <h3 class="desc">Total: </h3><p class="num"> 599kr</p><br>
+          <h3 class="desc">Delivery: </h3><p class="num"> To home</p><br>
+        </div>
+        <div class="bottom">
+          <h3 class="total">Total: </h3><p class="number"> 649kr,-</p><br>
+          <a href="../html/checkout.html" class="button">
+            <h3 class="check">Checkout</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

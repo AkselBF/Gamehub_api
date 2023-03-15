@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="home-page" content="width=device-width, initial-scale=1.0">
+  <title>GameHub home page</title>
+  <link rel="stylesheet" href="css/home.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html"><img src="images/GameHub_Logo.png" class="logo"></a>
+    <input class="burgermenu" type="checkbox" id="burgermenu"/>
+    <label class="icon" for="burgermenu"><span class="burgerline"></span></label>
+    <!--Menu-->
+    <nav class="navi">
+      <ul class="menu">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="html/games.html">Games</a></li>
+        <li><a href="html/about_us.html">About us</a></li>
+        <li><a href="html/contact_us.html">Contact us</a></li>
+        <li><a href="html/cart.html"><img src="images/GameHub_cartLogo.png" class="shop" href="#cart"> Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Main section (everything bellow menu)-->
+  <main>
+    <div class="wrapper">
+      <div class="imageslider">
+        <img src="images/GameHub_ZeldaBotw.jpg"/>
+        <img src="images/GameHub_Forspoken.jpg"/>
+        <img src="images/GameHub_EldenRing_2.jpg"/>
+      </div>
+    </div>
+
+    <div class="txtwrapper">
+      <center><hr id="overT"></center>
+      <h2 id="desc">Any game from any <br>platform, found here!</h2>
+      <center><hr id="underT"></center>
+    </div>
+
+    <div class="middleWrap">
+      <h2 class="late">Latest news</h2>
+      <br>
+
+      <div class="newsBox">
+        <div class="left">
+          <h2 class="introRow">The news include:</h2>
+          <ul>
+            <li>Newly announced games:</li>
+            <p>The latest games, either known or lesser known are on display here and of any kind. If, there's a game out there, you kan find it in here.</p>
+
+            <li>Upcoming games:</li>
+            <p>Games that have been announced in either a direct or trailer will be posted in here, Whether or not it's been given a release date. It is also possible to pre-order upcoming games of your choice.</p>
+  
+            <li>Latest sales:</li>
+            <p>Sales will automatically be displayed as soon as soon as they're made official. A list will set the sales from highest to lowest sales and what games they are.</p>
+  
+            <li>Personal news & developments:</li>
+            <p>Depending on your activities, you may receive news on how much you have gained and occasionally, receive a price. You may also receive news on whether you may purchase a game you wish for.</p>
+          </ul>
+        </div>
+
+        <div class="right">
+          <h2 id="news">Upcoming games:</h2>
+          <div class="imgRow">
+            <div class="swDesc">
+              <img class="switchGames" src="images/GameHub_ZeldaTotk_2.png"/>
+              <div class="swtxt">
+                <h3 class="swdetails">Release date:</h3>
+                <p class="swdate">12.05.2023</p>
+              </div>
+            </div>
+            <div class="psDesc">
+              <img class="psGames" src="images/GameHub_GowR.jpg"/>
+              <div class="pstxt">
+                <h3 class="psdetails">Release date:</h3>
+                <p class="psdate">09.11.2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="salesbox">
+            <a><h2 href="#sales" class="salestxt">Check out our latest sales here!</h2></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

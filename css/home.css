@@ -1,0 +1,505 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url("games.css");
+@font-face {
+  font-family: "Goldman";
+  src: url(../fonts/Goldman-Regular.ttf);
+}
+
+/*body and fonts*/
+body {
+  background-color: #141414;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Goldman";
+  font-weight: lighter;
+  text-align: center;
+  color: #5CAFFD;
+}
+
+h3 {
+  font-family: 'inter', sans-serif;
+  color: #5CAFFD;
+}
+
+li + p {
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+li {
+  font-family: 'inter', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: #5CAFFD;
+}
+
+p {
+  font-family: 'inter', sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  font-size: large;
+  text-align: left;
+  font-style: italic;
+}
+
+/*top menu*/
+.navbar {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  z-index: 100;
+}
+
+.shop {
+  height: 20px;
+  width: 20px;
+}
+
+.logo {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin-left: 25px;
+  margin-top: 10px;
+  background: linear-gradient(180deg, #000000 30%, #00ffff);
+  border-radius: 10px;
+}
+
+.navi {
+  height: 50%;
+  width: 300px;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  right: 0;
+  top: 86px;
+  z-index: 100;
+}
+
+.navi {
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding: 25px 60px 25px 60px;
+  color: #00ffff;
+}
+
+.menu .active {
+  color: #ffffff;
+}
+
+.menu a:hover {
+  color: #000000;
+  background-color: #00ffff;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.menu li:hover {
+  background-color: #00ffff;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 5px 0 5px;
+}
+
+@media (min-width: 1130px) {
+  .menu {
+    list-style: none;
+    float: right;
+  }
+
+  .menu li {
+    float: left;
+  }
+}
+
+@media (max-width: 1130px) {
+  .menu a {
+    display: block;
+    padding: 25px 40px 25px 40px;
+    color: #00ffff;
+  }
+}
+
+@media (max-width: 930px) {
+  .menu a {
+    display: block;
+    padding: 25px 25px 25px 25px;
+    color: #00ffff;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  float: right;
+  padding: 35px 20px 35px 20px;
+}
+
+.burgerline {
+  background: #ffffff;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 35px;
+  border-radius: 10px;
+}
+
+.burgerline::before,
+.burgerline::after {
+  background:#ffffff;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+}
+
+.burgerline::before {
+  top: 10px;
+  border-radius: 10px;
+}
+
+.burgerline::after {
+  top: -10px;
+  border-radius: 10px;
+}
+
+.burgermenu {
+  display: none;
+}
+
+.burgermenu:checked ~ nav {
+  max-height: 100%;
+}
+
+.burgermenu:checked ~ .icon .burgerline {
+  background: transparent;
+}
+
+.burgermenu:checked ~ .icon .burgerline::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.burgermenu:checked ~ .icon .burgerline::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .navi {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    z-index: 100;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+    color: #141414;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+/*automatic image show*/
+.wrapper {
+  width: 100vw;
+}
+
+.imageslider {
+  width: 100%;
+  animation: slide 15s ease-in-out infinite;
+  background-repeat: no-repeat;
+}
+
+@keyframes slide {
+  0% {
+    content: url(../images/GameHub_ZeldaBotw.jpg);
+    background-size: 100%;
+  }
+  
+  33% {
+    content: url(../images/GameHub_Forspoken.jpg);
+    background-size: 100%;
+  }
+  
+  66% {
+    content: url(../images/GameHub_EldenRing_2.jpg);
+    background-size: 100%;
+  }
+  
+  100% {
+    content: url(../images/GameHub_ZeldaBotw.jpg);
+    background-size: 100%;
+  }
+}
+
+/*website description*/
+.txtwrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#overT {
+  background-color: #3ED3F3;
+  width: 200px;
+  height: 3px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#desc {
+  text-align: center;
+  color: #3ED3F3;
+}
+#underT {
+  background-color: #3ED3F3;
+  width: 300px;
+  height: 3px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*middle*/
+.middleWrap {
+  background-image: linear-gradient(#0E253A, #141414);
+}
+
+.late {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.newsBox {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.left {
+  background-color: #141414;
+  width: 600px;
+  padding: 10px 30px 0 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1287px) {
+  .left {
+    width: 1000px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1025px) {
+  .left {
+    width: 800px;
+  }
+}
+@media (max-width: 830px) {
+  .left {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .left {
+    width: 100%;
+  }
+}
+
+/*Newest games*/
+.introRow {
+  padding: 0 0 30px 0;
+}
+
+#news {
+  font-family: "Goldman";
+  text-align: center;
+  padding: 5px 0 30px 10px;
+}
+
+.right {
+  background: linear-gradient(#1E1E1E, #14141400);
+  overflow: hidden;
+  flex-direction: column;
+  margin: 0 0 80px 20px;
+  padding-left: 50px;
+}
+
+.imgRow {
+  display: flex;
+  overflow: hidden;
+  padding: 10px 5px 30px 10px;
+}
+
+/*The switch game*/
+.swDesc {
+  position: relative;
+}
+
+.switchGames {
+  height: 400px;
+  width: 250px;
+  padding-left: 10px;
+  border-right: 10px solid #000000;
+  z-index: 50;
+}
+.swtxt {
+  padding: 10px 0 5px 20px;
+  margin: -5px 10px 10px 10px;
+  line-height: 25px;
+  width: 240px;
+  background-color: #000000;
+}
+.swdetails {
+  color: #00ffff;
+}
+
+/*The playstation game*/
+.psDesc {
+  position: relative;
+}
+
+.psGames {
+  height: 400px;
+  width: 340px;
+  padding-left: 20px;
+  border-right: 10px solid #000000;
+  z-index: 50;
+}
+.pstxt {
+  padding: 10px 0 5px 20px;
+  margin: -5px 10px 10px 20px;
+  line-height: 25px;
+  width: 320px;
+  background-color: #000000;
+}
+.psdetails {
+  color: #00ffff;
+}
+
+.salesbox {
+  margin: 10px 70px 0 20px;
+  padding: 20px 0 20px 0;
+  width: 590px;
+  background-color: #0E253A;
+}
+
+.salestxt {
+  text-align: center;
+  color: #00ffff;
+}
+
+/*media querries espiecially for bottom section*/
+@media (max-width: 1287px) {
+  .right {
+    width: 1000px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1025px) {
+  .right {
+    width: 800px;
+  }
+}
+@media (max-width: 830px) {
+  .right {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+  .imgRow {
+    flex-direction: column;
+  }
+  .swDesc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .psDesc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .salesbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 20px 0 20px 0;
+    width: 480px;
+  }
+}
+@media (max-width: 680px) {
+  .right {
+    margin: 0 0 80px 0;
+    padding-left: 0;
+  }
+
+  .salesbox {
+    width: 280px;
+    margin: 10px auto 10px auto;
+  }
+
+  .switchGames {
+    height: 300px;
+    width: 220px;
+  }
+  .swtxt {
+    width: 210px;
+  }
+
+  .psGames {
+    height: 300px;
+    width: 270px;
+  }
+  .pstxt {
+    width: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .salesbox {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,1053 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@font-face {
+  font-family: "Goldman";
+  src: url(../fonts/Goldman-Regular.ttf);
+}
+
+/*body and fonts*/
+body {
+  background-color: #141414;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Goldman";
+  font-weight: lighter;
+  text-align: center;
+  color: #5CAFFD;
+}
+
+h3 {
+  font-family: 'inter', sans-serif;
+  color: #5CAFFD;
+}
+
+li + p {
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+li {
+  font-family: 'inter', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: #5CAFFD;
+}
+
+p {
+  font-family: 'inter', sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  font-size: large;
+  text-align: left;
+  font-style: italic;
+}
+
+.navbar {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  z-index: 100;
+}
+
+.shop {
+  height: 20px;
+  width: 20px;
+}
+
+.logo {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin-left: 25px;
+  margin-top: 10px;
+  background: linear-gradient(180deg, #000000 30%, #00ffff);
+  border-radius: 10px;
+}
+
+.navi {
+  height: 50%;
+  width: 300px;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  right: 0;
+  top: 86px;
+  z-index: 100;
+}
+
+.navi {
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding: 25px 60px 25px 60px;
+  color: #00ffff;
+}
+
+.menu .active {
+  color: #ffffff;
+}
+
+.menu a:hover {
+  color: #000000;
+  background-color: #00ffff;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.menu li:hover {
+  background-color: #00ffff;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 5px 0 5px;
+}
+
+@media (min-width: 1130px) {
+  .menu {
+    list-style: none;
+    float: right;
+  }
+
+  .menu li {
+    float: left;
+  }
+}
+
+@media (max-width: 1130px) {
+  .menu a {
+    display: block;
+    padding: 25px 40px 25px 40px;
+    color: #00ffff;
+  }
+}
+
+@media (max-width: 930px) {
+  .menu a {
+    display: block;
+    padding: 25px 25px 25px 25px;
+    color: #00ffff;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  float: right;
+  padding: 35px 20px 35px 20px;
+}
+
+.burgerline {
+  background: #ffffff;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 35px;
+  border-radius: 10px;
+}
+
+.burgerline::before,
+.burgerline::after {
+  background:#ffffff;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+}
+
+.burgerline::before {
+  top: 10px;
+  border-radius: 10px;
+}
+
+.burgerline::after {
+  top: -10px;
+  border-radius: 10px;
+}
+
+.burgermenu {
+  display: none;
+}
+
+.burgermenu:checked ~ nav {
+  max-height: 100%;
+}
+
+.burgermenu:checked ~ .icon .burgerline {
+  background: transparent;
+}
+
+.burgermenu:checked ~ .icon .burgerline::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.burgermenu:checked ~ .icon .burgerline::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .navi {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    z-index: 100;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+    color: #141414;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+/*top description*/
+.info {
+  position: absolute;
+  margin: 40px 20px 40px 35px;
+  z-index: 30;
+  color: #000000;
+}
+
+/*playbox section*/
+.playcontainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.BImage1 {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
+}
+
+.playwrapper {
+  background: linear-gradient(#0e253ac0, #000000 95%);
+  position: absolute;
+  width: 100vw;
+  height: 600px;
+  top: 200px;
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+}
+
+.playbox {
+  color: #43DF49;
+  text-decoration: underline;
+}
+
+.playgames {
+  background: #020824;
+  position: relative;
+  width: 95vw;
+  height: 450px;
+  top: 50px;
+  padding: 20px 0 20px 0;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playline {
+  position: absolute;
+  width: 95vw;
+  height: 5px;
+  border-color: #43DF49;
+  background-color: #43DF49;
+  z-index: 10;
+}
+
+.playgame {
+  height: 350px;
+  width: 210px;
+  margin: 0 20px 0 20px;
+  z-index: 30;
+}
+
+/*price on playbox games*/
+.play-price {
+  position: absolute;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 10px solid #43DF49;
+  background-color: #000000;
+  color: #ffffff;
+  bottom: -23px;
+  right: 20px;
+  padding: 5px 100px 5px 10px;
+}
+
+/*Playbox arrows*/
+#play-l-arrow {
+  border: 6px solid #43DF49;
+  background-color: #000000;
+}
+#play-l-arrow::after {
+  border-top: 6px solid #43DF49;
+  border-right: 6px solid #43DF49;
+}
+#play-l-arrow:hover {
+  border: 6px solid #ffffff;
+  background-color: #43DF49;
+  transition-duration: 0.5s;
+}
+#play-l-arrow:hover:after {
+  border-top: 6px solid #ffffff;
+  border-right: 6px solid #ffffff;
+  margin-left: 14px;
+  transition-duration: 0.5s;
+}
+
+#play-r-arrow {
+  border: 6px solid #43DF49;
+  background-color: #000000;
+}
+#play-r-arrow::after {
+  border-top: 6px solid #43DF49;
+  border-right: 6px solid #43DF49;
+}
+#play-r-arrow:hover {
+  border: 6px solid #ffffff;
+  background-color: #43DF49;
+  transition-duration: 0.5s;
+}
+#play-r-arrow:hover:after {
+  border-top: 6px solid #ffffff;
+  border-right: 6px solid #ffffff;
+  margin-left: 18px;
+  transition-duration: 0.5s;
+}
+
+
+/*playbox media querries*/
+@media (max-width: 1286px) {
+  #playgame5 {
+    visibility: hidden;
+    display: none;
+  }
+  #play-price5 {
+    visibility: hidden;
+    display: none;
+  }
+  .playgame {
+    margin: 0 25px 0 25px;
+  }
+  .playgames {
+    margin-left: 2%;
+  }
+  .play-price {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1185px) {
+  #playgame4 {
+    visibility: hidden;
+    display: none;
+  }
+  #play-price4 {
+    visibility: hidden;
+    display: none;
+  }
+  .playgame {
+    margin: 0 30px 0 30px;
+  }
+  .play-price {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .playgames {
+    margin-left: 4%;
+    width: 90vw;
+  }
+  .playline {
+    width: 80vw;
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .playgame {
+    margin: 0 20px 0 20px;
+  }
+  .playgames {
+    margin-left: 4%;
+  }
+  .play-price {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 890px) {
+  #playgame3 {
+    visibility: hidden;
+    display: none;
+  }
+  #play-price3 {
+    visibility: hidden;
+    display: none;
+  }
+  .playgame {
+    margin: 0 30px 0 30px;
+  }
+  .playgames {
+    margin-left: 4%;
+  }
+  .play-price {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .playgame {
+    margin: 0 20px 0 20px;
+  }
+  .playgames {
+    margin-left: 4%;
+  }
+  .play-price {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #playgame2 {
+    visibility: hidden;
+    display: none;
+  }
+
+  #play-price2 {
+    visibility: hidden;
+    display: none;
+  }
+
+  .playgames {
+    margin-left: 0;
+    width: 100%;
+  }
+  .playgame {
+    height: 300px;
+    width: 190px;
+    margin: 0 20px 0 0;
+  }
+  .playline {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .playline {
+    width: 100vw;
+  }
+}
+/*end of playbox media querries*/
+
+
+/*playstation section*/
+.pscontainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.BImage2 {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
+}
+
+.pswrapper {
+  background: linear-gradient(#7391ff9e, #000000 95%);
+  position: absolute;
+  width: 100vw;
+  height: 600px;
+  top: 950px;
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+}
+
+.playstation {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.psgames {
+  background: #020824;
+  position: relative;
+  width: 95vw;
+  height: 450px;
+  top: 50px;
+  padding: 20px 0 20px 0;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.psline {
+  position: absolute;
+  width: 95vw;
+  height: 5px;
+  border-color: #7391ff;
+  background-color: #7391ff;
+  z-index: 10;
+}
+
+.psgame {
+  height: 350px;
+  width: 270px;
+  margin: 0 20px 0 20px;
+  z-index: 30;
+}
+
+.gameImage {
+  position: relative;
+  z-index: 30;
+}
+
+/*left arrow*/
+.left-arrow {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 10px 0 -120px;
+  left: 9%;
+  bottom: 237px;
+  z-index: 40;
+}
+#ps-l-arrow {
+  border: 6px solid #7391ff;
+  background-color: #000000;
+}
+#ps-l-arrow:hover {
+  border: 6px solid #ffffff;
+  background-color: #7391ff;
+  transition-duration: 0.5s;
+}
+
+.left-arrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 24%;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  border-top: 6px solid #7391ff;
+  border-right: 6px solid #7391ff;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.left-arrow:hover:after {
+  border-top: 6px solid #ffffff;
+  border-right: 6px solid #ffffff;
+  margin-left: 14px;
+  transition-duration: 0.5s;
+}
+
+/*right arrow*/
+.right-arrow {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 -105px 0 10px;
+  right: 9%;
+  bottom: 237px;
+  z-index: 40;
+}
+#ps-r-arrow {
+  border: 6px solid #7391ff;
+  background-color: #000000;
+}
+#ps-r-arrow:hover {
+  border: 6px solid #ffffff;
+  background-color: #7391ff;
+  transition-duration: 0.5s;
+}
+
+.right-arrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 24%;
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  border-top: 6px solid #7391ff;
+  border-right: 6px solid #7391ff;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.right-arrow:hover:after {
+  border-top: 6px solid #ffffff;
+  border-right: 6px solid #ffffff;
+  margin-left: 18px;
+  transition-duration: 0.5s;
+}
+
+/*price on playstation games*/
+.ps-price {
+  position: absolute;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 10px solid #7391ff;
+  background-color: #000000;
+  color: #ffffff;
+  bottom: -30px;
+  right: 20px;
+  padding: 5px 100px 5px 10px;
+}
+
+/*playstation media querries*/
+@media (max-width: 1286px) {
+  #psgame4 {
+    visibility: hidden;
+    display: none;
+  }
+  #ps-price4 {
+    visibility: hidden;
+    display: none;
+  }
+  .psgames {
+    margin-left: 2%;
+  }
+  .psgame {
+    margin: 0 30px 0 30px;
+  }
+  .ps-price {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1185px) {
+  .psgame {
+    margin: 0 20px 0 20px;
+  }
+  .ps-price {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1080px) {
+  #psgame3 {
+    visibility: hidden;
+    display: none;
+  }
+  #ps-price3 {
+    visibility: hidden;
+    display: none;
+  }
+  .psgame {
+    margin: 0 30px 0 30px;
+  }
+  .psgames {
+    margin-left: 4%;
+    width: 90vw;
+  }
+  .psline {
+    width: 80vw;
+  }
+  .ps-price {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .psgame {
+    margin: 0 20px 0 20px;
+  }
+  .psgames {
+    margin-left: 4%;
+  }
+  .ps-price {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #psgame2 {
+    visibility: hidden;
+    display: none;
+  }
+  #ps-price2 {
+    visibility: hidden;
+    display: none;
+  }
+  .psgame {
+    margin: 0 20px 0 20px;
+  }
+  .psgames {
+    width: 85vw;
+    margin-left: 6.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .psgames {
+    margin-left: 0;
+    width: 100%;
+  }
+  .psgame {
+    height: 300px;
+    width: 230px;
+    margin: 0 20px 0 0;
+  }
+  .psline {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .psline {
+    width: 100vw;
+  }
+}
+/*end of ps media querries*/
+
+
+/*Nintendo switch section*/
+.swcontainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.BImage3 {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
+}
+
+.swwrapper {
+  background: linear-gradient(#FF1A1A9e, #000000 95%);
+  position: absolute;
+  width: 100vw;
+  height: 600px;
+  top: 1705px;
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+}
+
+.switch {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.swgames {
+  background: #020824;
+  position: relative;
+  width: 95vw;
+  height: 450px;
+  top: 50px;
+  padding: 20px 0 20px 0;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swline {
+  position: absolute;
+  width: 95vw;
+  height: 5px;
+  border-color: #FF1A1A;
+  background-color: #FF1A1A;
+  z-index: 10;
+}
+
+.swgame {
+  height: 350px;
+  width: 210px;
+  margin: 0 20px 0 20px;
+  z-index: 30;
+}
+
+/*price on nintendo switch games*/
+.sw-price {
+  position: absolute;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 10px solid #FF1A1A;
+  background-color: #000000;
+  color: #ffffff;
+  bottom: -30px;
+  right: 20px;
+  padding: 5px 100px 5px 10px;
+}
+
+/*Nintendo switch arrows*/
+#sw-l-arrow {
+  border: 6px solid #FF1A1A;
+  background-color: #000000;
+}
+#sw-l-arrow::after {
+  border-top: 6px solid #FF1A1A;
+  border-right: 6px solid #FF1A1A;
+}
+#sw-l-arrow:hover {
+  border: 6px solid #ffffff;
+  background-color: #FF1A1A;
+  transition-duration: 0.5s;
+}
+#sw-l-arrow:hover:after {
+  border-top: 6px solid #ffffff;
+  border-right: 6px solid #ffffff;
+  margin-left: 14px;
+  transition-duration: 0.5s;
+}
+
+#sw-r-arrow {
+  border: 6px solid #FF1A1A;
+  background-color: #000000;
+}
+#sw-r-arrow::after {
+  border-top: 6px solid #FF1A1A;
+  border-right: 6px solid #FF1A1A;
+}
+#sw-r-arrow:hover {
+  border: 6px solid #ffffff;
+  background-color: #FF1A1A;
+  transition-duration: 0.5s;
+}
+#sw-r-arrow:hover:after {
+  border-top: 6px solid #ffffff;
+  border-right: 6px solid #ffffff;
+  margin-left: 18px;
+  transition-duration: 0.5s;
+}
+
+/*nintendo switch media querries*/
+@media (max-width: 1286px) {
+  #swgame5 {
+    visibility: hidden;
+    display: none;
+  }
+  #sw-price5 {
+    visibility: hidden;
+    display: none;
+  }
+  .swgame {
+    margin: 0 25px 0 25px;
+  }
+  .swgames {
+    margin-left: 2%;
+  }
+  .sw-price {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1185px) {
+  #swgame4 {
+    visibility: hidden;
+    display: none;
+  }
+  #sw-price4 {
+    visibility: hidden;
+    display: none;
+  }
+  .swgame {
+    margin: 0 30px 0 30px;
+  }
+  .sw-price {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .swgames {
+    margin-left: 4%;
+    width: 90vw;
+  }
+  .swline {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .swgame {
+    margin: 0 20px 0 20px;
+  }
+  .swgames {
+    margin-left: 4%;
+  }
+  .sw-price {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 890px) {
+  #swgame3 {
+    visibility: hidden;
+    display: none;
+  }
+  #sw-price3 {
+    visibility: hidden;
+    display: none;
+  }
+  .swgame {
+    margin: 0 30px 0 30px;
+  }
+  .swgames {
+    margin-left: 4%;
+  }
+  .sw-price {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swgame {
+    margin: 0 20px 0 20px;
+  }
+  .swgames {
+    margin-left: 4%;
+  }
+  .sw-price {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #swgame2 {
+    visibility: hidden;
+    display: none;
+  }
+
+  #sw-price2 {
+    visibility: hidden;
+    display: none;
+  }
+
+  .swgames {
+    margin-left: 0;
+    width: 100%;
+  }
+  .swgame {
+    height: 300px;
+    width: 190px;
+    margin: 0 20px 0 0;
+  }
+  .swline {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .swline {
+    width: 100vw;
+  }
+}
+/*end of switch media querries*/
+/**/
+/*media querries for side arrows*/
+@media (max-width: 1286px) {
+  .right-arrow {
+    right: 11%;
+  }
+  .left-arrow {
+    left: 11%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .right-arrow {
+    right: 16%;
+  }
+  .left-arrow {
+    left: 15.5%;
+  }
+}
+
+@media (max-width: 850px) {
+  .right-arrow {
+    right: 18%;
+  }
+  .left-arrow {
+    left: 18%;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-arrow {
+    right: 21%;
+  }
+  .right-arrow#sw-r-arrow {
+    right: 21%;
+  }
+  .left-arrow {
+    left: 21%;
+  }
+  .left-arrow#sw-l-arrow {
+    left: 21%;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-arrow {
+    right: 31%;
+  }
+  .right-arrow#sw-r-arrow {
+    right: 31%;
+  }
+
+  .left-arrow {
+    left: 30%;
+  }
+  .left-arrow#sw-l-arrow {
+    left: 30%;
+  }
+}
+
+@media (max-width: 360px) {
+  .right-arrow {
+    visibility: hidden;
+    display: none;
+  }
+  .left-arrow {
+    visibility: hidden;
+    display: none;
+  }
+}
