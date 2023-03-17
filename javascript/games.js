@@ -8,15 +8,6 @@ async function getGames() {
 getGames();
 
 function renderGame(game) {
-/*
-  document.querySelector(".playgames").innerHTML += `
-    <a href="../html/procuct.html"><div class="gameImage">
-      <img class="playgame" id="playgame1" src="${game.images[0].src}">
-      <h3 class="play-price" id="play-price1">${game.price_html}</h3>
-    </a>
-  `;*/
-  
-  
   if (game.attributes[1].name === "playbox"){
     document.querySelector(".playgames").innerHTML += `
     <a href="../html/procuct.html"><div class="gameImage">
@@ -43,47 +34,4 @@ function renderGame(game) {
     </a>
   `;
   }
-  
-  /*
-  if game.category== "switch"{
-    document.querySelector("switch").innerHTML += `
-    switch html her
-    
-    `
-  }*/
-  /*
-  document.querySelector(".playgames").innerHTML += `
-    <a href="../html/procuct.html"><div class="gameImage">
-      <img class="playgame" id="playgame1" src="${game.images[0].src}">
-      <h3 class="play-price" id="play-price1">${game.price_html}</h3>
-    </a>
-  `;*/
-
-  /*
-  document.querySelector(".psgames").innerHTML += `
-    <a href="../html/procuct.html"><div class="gameImage">
-      <img class="playgame" id="playgame1" src="${game.images[0].src}">
-      <h3 class="play-price" id="play-price1">${game.price_html}</h3>
-    </a>
-  `;*/
 }
-
-/*
-function renderSwitchGame(switchGame) {
-  document.querySelector("body").innerHTML += `
-    <a href="../html/procuct.html">
-    <div class="gameImage">
-            <img class="playgame" id="playgame1" src="${switchGame.images[0].src}">
-            <h3 class="play-price" id="play-price1"> ${switchGame.price_html}</h3>
-          </div>
-          </a>
-
-    <h2>${game.description}</h2>
-    <h2>${game.attributes[0].terms[0].name}</h2>
-    <div>
-      ${game.price_html}
-    </div>
-    <img src="${game.images[0].src}" width="300px">
-    <hr>
-  `;
-}*/

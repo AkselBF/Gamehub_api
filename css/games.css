@@ -106,7 +106,7 @@ a {
 
 .playgame {
   height: 350px;
-  width: 210px;
+  width: 250px;
   margin: 0 20px 0 20px;
   z-index: 30;
 }
@@ -608,7 +608,7 @@ a {
 
 .swgame {
   height: 350px;
-  width: 210px;
+  width: 230px;
   margin: 0 20px 0 20px;
   z-index: 30;
 }
