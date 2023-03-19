@@ -7,7 +7,6 @@ async function getGames() {
 
 getGames();
 
-
 function addGames(game) {
   const container = document.querySelector(".wrapper");
   const gameContainer = document.createAttribute("div");
@@ -18,7 +17,7 @@ function addGames(game) {
   gameContainer.append(img);
   container.append(gameContainer);
 
-  gameLink.href = "detail.html";
+  gameLink.href = `html/procuct.html/${game.id}`;
   gameLink.append(img);
   gameContainer.append(gameLink);
 
