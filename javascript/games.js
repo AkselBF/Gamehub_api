@@ -12,7 +12,7 @@ function addGames(game) {
   const gameContainer = document.createAttribute("div");
   const gameLink = document.createAttribute("a");
 
-  const img = document.createAttribute(img);
+  const img = document.createAttribute("img");
 
   gameContainer.append(img);
   container.append(gameContainer);
@@ -21,11 +21,10 @@ function addGames(game) {
   gameLink.append(img);
   gameContainer.append(gameLink);
 
-  /*
   gameLink.addEventListener("click", () => {
     localStorage.setItem("id", game.id);
     console.log(localStorage.getItem("id"));
-  });*/
+  });
 
   document.querySelector("body").append(gameContainer);
 }

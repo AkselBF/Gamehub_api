@@ -5,8 +5,9 @@
 //const detailContainer = document.querySelector(".product-detail");
 
 const gameContainer = document.querySelector(".wrapper");
+
 const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
+const params = new URLSearchParams(document.location.search);
 const gameId = params.get("id");
 
 console.log(gameId);
