@@ -4,12 +4,12 @@
 //const gameContainer = document.querySelector(".wrapper");
 //const detailContainer = document.querySelector(".product-detail");
 
-console.log(localStorage.getItem("id"));
-
 const gameContainer = document.querySelector(".wrapper");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const gameId = params.get("id");
+
+console.log(gameId);
 
 const url = "https://aks-faret.no/apiex/wp-json/wc/store/products/" + gameId;
 
