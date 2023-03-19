@@ -21,10 +21,11 @@ function addGames(game) {
   gameLink.append(img);
   gameContainer.append(gameLink);
 
+  /*
   gameLink.addEventListener("click", () => {
     localStorage.setItem("id", game.id);
     console.log(localStorage.getItem("id"));
-  });
+  });*/
 
   document.querySelector("body").append(gameContainer);
 }
