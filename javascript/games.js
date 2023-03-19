@@ -7,6 +7,29 @@ async function getGames() {
 
 getGames();
 
+
+function addGames(game) {
+  const container = document.querySelector(".wrapper");
+  const gameContainer = document.createAttribute("div");
+  const gameLink = document.createAttribute("a");
+
+  const img = document.createAttribute(img);
+
+  gameContainer.append(img);
+  container.append(gameContainer);
+
+  gameLink.href = "detail.html";
+  gameLink.append(img);
+  gameContainer.append(gameLink);
+
+  gameLink.addEventListener("click", () => {
+    localStorage.setItem("id", game.id);
+    console.log(localStorage.getItem("id"));
+  });
+
+  document.querySelector("body").append(gameContainer);
+}
+
 function renderGame(game) {
   if (game.attributes[1].name === "playbox"){
     document.querySelector(".playgames").innerHTML += `

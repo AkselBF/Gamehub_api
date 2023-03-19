@@ -1,10 +1,17 @@
 /*
   Chosen game from games.html
 */
-const gameContainer = document.querySelector(".wrapper");
+//const gameContainer = document.querySelector(".wrapper");
 //const detailContainer = document.querySelector(".product-detail");
 
-const url = "https://aks-faret.no/apiex/wp-json/wc/store/products/37";
+console.log(localStorage.getItem("id"));
+
+const gameContainer = document.querySelector(".wrapper");
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const gameId = params.get("id");
+
+const url = "https://aks-faret.no/apiex/wp-json/wc/store/products/" + gameId;
 
 // Gets the chosen game from previous page
 async function fetchGame() {
