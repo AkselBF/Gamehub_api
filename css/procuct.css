@@ -58,7 +58,7 @@ a {
   height: 670px;
   object-fit: cover;
   object-position: 80% 20%;
-  border-bottom: solid 110px #FF1A1A;
+  border-bottom: solid 110px #000000;
 }
 
 .game {
@@ -67,15 +67,15 @@ a {
   width: 340px;
   top: 250px;
   left: 0;
-  border-top: solid 20px #FF1A1A;
-  border-left: solid 20px #FF1A1A;
-  border-right: solid 20px #FF1A1A;
+  border-top: solid 20px #000000;
+  border-left: solid 20px #000000;
+  border-right: solid 20px #000000;
 }
 
 .descbox {
   position: absolute;
   width: 100vw;
-  background-color: #FF1A1A;
+  background-color: #000000;
   padding: 10px 0 23.5px 20px;
   top: 660px;
   left: 320px;
@@ -105,7 +105,7 @@ a {
 /*media querries for the top section: the image and descriptions*/
 @media (max-width: 1286px) {
   .Bimage {
-    border-bottom: solid 160px #FF1A1A;
+    border-bottom: solid 160px #000000;
   }
   .descbox {
     width: 50%;
@@ -115,7 +115,7 @@ a {
 }
 @media (max-width: 1080px) {
   .Bimage {
-    border-bottom: solid 190px #FF1A1A;
+    border-bottom: solid 190px #000000;
   }
   .descbox {
     height: 180px;
