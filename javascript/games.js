@@ -21,16 +21,18 @@ function addGames(game) {
   gameLink.append(img);
   gameContainer.append(gameLink);
 
+  /*
   gameLink.addEventListener("click", () => {
     localStorage.setItem("id", game.id);
     console.log(localStorage.getItem("id"));
   });
+  */
 
   document.querySelector("body").append(gameContainer);
 }
 
 function renderGame(game) {
-  if (game.attributes[1].name === "playbox"){
+  if (game.attributes[1].name === "playbox") {
     document.querySelector(".playgames").innerHTML += `
     <a href="../html/procuct.html"><div class="gameImage">
       <img class="playgame" id="playgame1" src="${game.images[0].src}">
@@ -39,7 +41,7 @@ function renderGame(game) {
   `;
   }
 
-  if (game.attributes[1].name === "playstation"){
+  if (game.attributes[1].name === "playstation") {
     document.querySelector(".psgames").innerHTML += `
     <a href="../html/procuct.html"><div class="gameImage">
       <img class="psgame" id="psgame1" src="${game.images[0].src}">
@@ -48,7 +50,7 @@ function renderGame(game) {
   `;
   }
 
-  if (game.attributes[1].name === "switch"){
+  if (game.attributes[1].name === "switch") {
     document.querySelector(".swgames").innerHTML += `
     <a href="../html/procuct.html"><div class="gameImage">
       <img class="swgame" id="swgame1" src="${game.images[0].src}">
