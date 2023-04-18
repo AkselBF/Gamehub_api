@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-  <!-- Hotjar Tracking Code for Gamehub-api -->
+  <!-- Hotjar Tracking Code for Gamehub-api --> 
 <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -69,31 +69,26 @@
           <label for="Postal" class="boxname">Postal nr</label>
           <input type="text" class="box" id="postbox" name="Postal" placeholder="">
         </div>
-        <div class="txtbox" id="country">
-          <label for="Country" class="boxname">Country</label>
-          <input type="text" class="box" id="countrybox" name="Country" placeholder="">
-        </div>
-        <div class="txtbox" id="city">
-          <label for="City" class="boxname">City</label>
-          <input type="text" class="box" id="citybox" name="City" placeholder="">
-        </div>
-        <div class="txtbox" id="card">
-          <label for="Card" class="boxname">Card nr</label>
-          <input type="tel" class="box" id="cardbox" name="Card" 
-          min="0" max="9" maxlength="16" inputmode="numeric"
-          pattern="[0-3\s]" placeholder="____ ____ ____ ____">
-        </div>
-        <div class="txtbox" id="date">
-          <label for="Time" class="boxname">Month/Year</label>
-          <input type="tel" class="box" id="timebox" name="Time" 
-          min="0" max="9" maxlength="5" inputmode="numeric"
-          placeholder="__/__">
-        </div>
-        <div class="txtbox" id="sec">
-          <label for="Security" class="boxname">CVC</label>
-          <input type="tel" class="box" id="secbox" name="Security" 
-          min="0" max="9" maxlength="3" inputmode="numeric"
-          placeholder="___">
+        
+        <div class="card_container">
+          <div class="txtbox" id="card">
+            <label for="Card" class="cardname">Card nr</label>
+            <input type="tel" class="box" id="cardbox" name="Card" 
+            min="0" max="9" maxlength="16" inputmode="numeric"
+            pattern="[0-3\s]" placeholder="____ ____ ____ ____">
+          </div>
+          <div class="txtbox" id="date">
+            <label for="Time" class="cardname">Month/Year</label>
+            <input type="tel" class="box" id="timebox" name="Time" 
+            min="0" max="9" maxlength="5" inputmode="numeric"
+            placeholder="__/__">
+          </div>
+          <div class="txtbox" id="sec">
+            <label for="Security" class="cardname">CVC</label>
+            <input type="tel" class="box" id="secbox" name="Security" 
+            min="0" max="9" maxlength="3" inputmode="numeric"
+            placeholder="___">
+          </div>
         </div>
       </div>
       <diz class="right">

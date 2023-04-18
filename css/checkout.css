@@ -102,7 +102,7 @@ input {
 }
 
 .txtbox {
-  margin: 20px 10px 20px 40px;
+  margin: 10px 10px 10px 40px;
 }
 
 /*left side of the screen*/
@@ -118,10 +118,23 @@ input {
   font-weight: bold;
   font-family: 'inter', sans-serif;
 }
+
+.cardname {
+  font-weight: bold;
+  font-family: 'inter', sans-serif;
+}
+
 .box {
   font-family: 'inter', sans-serif;
   font-size: medium;
   border: 1px solid #bcbcbc;
+}
+
+.card_container {
+  background-color: #D9D9D9;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 176px;
 }
 
 /*All textboxes*/
@@ -148,33 +161,26 @@ input {
   display: inline-block;
 }
 
-#countrybox {
-  width: 250px;
-}
-#citybox {
-  width: 250px;
-}
-#country, #city {
-  display: inline-block;
-}
-
 #cardbox {
   font-size: large;
   width: 450px;
   text-align: center;
   letter-spacing: 10px;
+  background-color: #ffffff;
 }
 #timebox {
   font-size: large;
   width: 200px;
   text-align: center;
   letter-spacing: 10px;
+  background-color: #ffffff;
 }
 #secbox {
   font-size: large;
   width: 200px;
   text-align: center;
   letter-spacing: 10px;
+  background-color: #ffffff;
 }
 #date, #sec {
   display: inline-block;
@@ -186,6 +192,8 @@ input {
   width: 45%;
   float: right;
   overflow-y: hidden;
+  margin-top: -20px;
+  padding-bottom: 15px;
 }
 
 .product {
@@ -250,6 +258,10 @@ input {
     margin: 20px 20px 10px 40px;
     float: left;
   }
+
+  .card_container { 
+    padding-bottom: 275px;
+  }
 }
 
 @media (max-width: 1207px) {
@@ -257,13 +269,23 @@ input {
     flex-direction: column;
     display: flex;
   }
+
+  .card_container {
+    padding-bottom: 50px;
+  }
+
   .left {
     width: 100%;
     margin-bottom: 20px;
   }
+
   .right {
     width: 100%;
+    margin-top: -20px;
+    padding-bottom: 0;
+    padding-bottom: 50px;
   }
+
   .right-button {
     float: right;
     margin: 210px 20px 10px 10px;
@@ -279,7 +301,7 @@ input {
     display: block;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 20px 10px 20px 20px;
+    margin: 10px 10px 10px 20px;
   }
   .box {
     font-size: small;
@@ -309,7 +331,7 @@ input {
 
 @media (max-width: 360px) {
   .txtbox {
-    margin: 20px 10px 20px 20px;
+    margin: 10px 10px 10px 20px;
   }
   .right-button {
     float: left;
