@@ -63,21 +63,85 @@ a {
 @keyframes slide {
   0% {
     content: url(../images/GameHub_ZeldaBotw.jpg);
+    opacity: 1;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  29% {
+    content: url(../images/GameHub_ZeldaBotw.jpg);
+    opacity: 1;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  30% {
+    content: url(../images/GameHub_ZeldaBotw.jpg);
+    opacity: 0;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  31% {
+    content: url(../images/GameHub_Forspoken.jpg);
+    opacity: 0;
+    animation-duration: 1s;
     background-size: 100%;
   }
   
-  33% {
+  32% {
     content: url(../images/GameHub_Forspoken.jpg);
+    opacity: 1;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  63% {
+    content: url(../images/GameHub_Forspoken.jpg);
+    opacity: 1;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  64% {
+    content: url(../images/GameHub_Forspoken.jpg);
+    opacity: 0;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  65% {
+    content: url(../images/GameHub_EldenRing_2.jpg);
+    opacity: 0;
+    animation-duration: 1s;
     background-size: 100%;
   }
   
   66% {
     content: url(../images/GameHub_EldenRing_2.jpg);
+    opacity: 1;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  98% {
+    content: url(../images/GameHub_EldenRing_2.jpg);
+    opacity: 1;
+    animation-duration: 1s;
+    background-size: 100%;
+  }
+
+  99% {
+    content: url(../images/GameHub_EldenRing_2.jpg);
+    opacity: 0;
+    animation-duration: 1s;
     background-size: 100%;
   }
   
   100% {
     content: url(../images/GameHub_ZeldaBotw.jpg);
+    opacity: 0;
+    animation-duration: 1s;
     background-size: 100%;
   }
 }
