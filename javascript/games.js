@@ -17,6 +17,13 @@ function renderGame(game) {
       <h3 class="play-price" id="play-price1">${game.price_html}</h3>
     </a>
   `;
+
+    document.querySelector(".playgames").innerHTML += `
+    <a href="./procuct.html?id=${game.id}"><div class="gameImage">
+      <img class="playgame" id="playgame1" src="${game.images[0].src}">
+      <h3 class="play-price" id="play-price1">${game.price_html}</h3>
+    </a>
+  `;
   }
 
   if (game.attributes[1].name === "playstation") {

@@ -76,7 +76,7 @@ a {
   position: absolute;
   width: 100vw;
   background-color: #000000;
-  padding: 10px 0 23.5px 20px;
+  padding: 10px 10px 23.5px 20px;
   top: 660px;
   left: 320px;
 }
@@ -330,13 +330,15 @@ a {
 
 .buttons {
   display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .left-button {
-  width: 400px;
-  height: 90px;
+  width: 300px;
+  height: 70px;
   background-color: #3ed3f3;
-  margin: 80px 60px 80px 140px;
+  margin: 80px 100px 80px 200px;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -345,14 +347,14 @@ a {
   font-weight: bold;
   color: #000000;
   text-align: center;
-  margin-top: 30px;
+  margin:  20px auto auto auto;
 }
 
 .right-button {
-  width: 400px;
-  height: 90px;
+  width: 300px;
+  height: 70px;
   background-color: #00ff85;
-  margin: 80px 60px 80px 400px;
+  margin: 80px 200px 80px 100px;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -361,7 +363,7 @@ a {
   font-weight: bold;
   color: #000000;
   text-align: center;
-  margin-top: 30px;
+  margin: 20px auto auto auto;
 }
 
 /*media querries for bottom section: slideshow and buttons*/
@@ -370,9 +372,6 @@ a {
     width: 1000px;
     flex-wrap: nowrap;
   }
-  .right-button {
-    margin: 80px 60px 80px 200px;
-  }
 }
 @media (max-width: 1180px) {
   .screenshots {
@@ -380,17 +379,16 @@ a {
     flex-wrap: nowrap;
   }
   .right-button {
-    margin: 80px 80px 80px 100px;
+    margin: 80px auto 80px auto;
+  }
+  .left-button {
+    margin: 80px auto 80px auto;
   }
 }
 @media (max-width: 1000px) {
   .screenshots {
     width: 600px;
     flex-wrap: nowrap;
-  }
-  .right-button {
-    margin: 80px 80px 80px 0;
-    width: 550px;
   }
 }
 @media (max-width: 768px) {
@@ -402,20 +400,20 @@ a {
     flex-direction: column;
   }
   .left-button {
-    width: 500px;
-    height: 120px;
+    width: 400px;
+    height: 80px;
     margin: 100px auto 50px auto;
   }
   .add {
-    margin-top: 40px;
+    margin-top: 25px;
   }
   .right-button {
-    width: 500px;
-    height: 120px;
+    width: 400px;
+    height: 80px;
     margin: 0 auto 50px auto;
   }
   .purchase {
-    margin-top: 40px;
+    margin-top: 25px;
   }
 }
 @media (max-width: 600px) {

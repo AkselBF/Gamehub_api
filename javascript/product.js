@@ -21,6 +21,7 @@ async function fetchGame() {
 
   createHTML(game);
   createDetails(game);
+  renderColor(game);
 }
 
 fetchGame();
@@ -89,4 +90,30 @@ function createDetails(game) {
       </div>
     </div>
   `;
+}
+
+function renderColor(game) {
+  if (game.attributes[1].name === "playbox") {
+    document.querySelector(".Bimage").style.borderBottom = "solid 110px #43DF49";
+    document.querySelector(".game").style.borderTop = "solid 20px #43DF49";
+    document.querySelector(".game").style.borderLeft = "solid 20px #43DF49";
+    document.querySelector(".game").style.borderRight = "solid 20px #43DF49";
+    document.querySelector(".descbox").style.backgroundColor = "#43DF49";
+  }
+
+  if (game.attributes[1].name === "playstation") {
+    document.querySelector(".Bimage").style.borderBottom = "solid 110px #7391ff";
+    document.querySelector(".game").style.borderTop = "solid 20px #7391ff";
+    document.querySelector(".game").style.borderLeft = "solid 20px #7391ff";
+    document.querySelector(".game").style.borderRight = "solid 20px #7391ff";
+    document.querySelector(".descbox").style.backgroundColor = "#7391ff";
+  }
+
+  if (game.attributes[1].name === "switch") {
+    document.querySelector(".Bimage").style.borderBottom = "solid 110px #FF1A1A";
+    document.querySelector(".game").style.borderTop = "solid 20px #FF1A1A";
+    document.querySelector(".game").style.borderLeft = "solid 20px #FF1A1A";
+    document.querySelector(".game").style.borderRight = "solid 20px #FF1A1A";
+    document.querySelector(".descbox").style.backgroundColor = "#FF1A1A";
+  }
 }

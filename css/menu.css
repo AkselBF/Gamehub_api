@@ -42,6 +42,7 @@
 .menu a {
   display: block;
   text-decoration: none;
+  font-style: normal;
   padding: 25px 60px 25px 60px;
   color: #00ffff;
 }
