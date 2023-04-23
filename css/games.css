@@ -34,7 +34,6 @@ p {
   line-height: 1.5;
 }
 
-
 ul {
   list-style: none;
 }
@@ -52,7 +51,8 @@ a {
   position: absolute;
   margin: 40px 20px 40px 35px;
   z-index: 30;
-  color: #000000;
+  color: #ffffff;
+  font-size: 1.5em;
 }
 
 /*playbox section*/
