@@ -124,48 +124,6 @@ a {
   padding: 5px 100px 5px 10px;
 }
 
-/*Playbox arrows*/
-#play-l-arrow {
-  border: 6px solid #43DF49;
-  background-color: #000000;
-}
-#play-l-arrow::after {
-  border-top: 6px solid #43DF49;
-  border-right: 6px solid #43DF49;
-}
-#play-l-arrow:hover {
-  border: 6px solid #ffffff;
-  background-color: #43DF49;
-  transition-duration: 0.5s;
-}
-#play-l-arrow:hover:after {
-  border-top: 6px solid #ffffff;
-  border-right: 6px solid #ffffff;
-  margin-left: 14px;
-  transition-duration: 0.5s;
-}
-
-#play-r-arrow {
-  border: 6px solid #43DF49;
-  background-color: #000000;
-}
-#play-r-arrow::after {
-  border-top: 6px solid #43DF49;
-  border-right: 6px solid #43DF49;
-}
-#play-r-arrow:hover {
-  border: 6px solid #ffffff;
-  background-color: #43DF49;
-  transition-duration: 0.5s;
-}
-#play-r-arrow:hover:after {
-  border-top: 6px solid #ffffff;
-  border-right: 6px solid #ffffff;
-  margin-left: 18px;
-  transition-duration: 0.5s;
-}
-
-
 /*playbox media querries*/
 @media (max-width: 1286px) {
   #playgame5 {
@@ -351,90 +309,6 @@ a {
 .gameImage {
   position: relative;
   z-index: 30;
-}
-
-/*left arrow*/
-.left-arrow {
-  position: absolute;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 0 10px 0 -120px;
-  left: 9%;
-  bottom: 237px;
-  z-index: 40;
-}
-#ps-l-arrow {
-  border: 6px solid #7391ff;
-  background-color: #000000;
-}
-#ps-l-arrow:hover {
-  border: 6px solid #ffffff;
-  background-color: #7391ff;
-  transition-duration: 0.5s;
-}
-
-.left-arrow:after {
-  content: '';
-  display: inline-block;
-  margin-top: 24%;
-  margin-left: 20px;
-  width: 30px;
-  height: 30px;
-  border-top: 6px solid #7391ff;
-  border-right: 6px solid #7391ff;
-  -moz-transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-.left-arrow:hover:after {
-  border-top: 6px solid #ffffff;
-  border-right: 6px solid #ffffff;
-  margin-left: 14px;
-  transition-duration: 0.5s;
-}
-
-/*right arrow*/
-.right-arrow {
-  position: absolute;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 0 -105px 0 10px;
-  right: 9%;
-  bottom: 237px;
-  z-index: 40;
-}
-#ps-r-arrow {
-  border: 6px solid #7391ff;
-  background-color: #000000;
-}
-#ps-r-arrow:hover {
-  border: 6px solid #ffffff;
-  background-color: #7391ff;
-  transition-duration: 0.5s;
-}
-
-.right-arrow:after {
-  content: '';
-  display: inline-block;
-  margin-top: 24%;
-  margin-left: 12px;
-  width: 30px;
-  height: 30px;
-  border-top: 6px solid #7391ff;
-  border-right: 6px solid #7391ff;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.right-arrow:hover:after {
-  border-top: 6px solid #ffffff;
-  border-right: 6px solid #ffffff;
-  margin-left: 18px;
-  transition-duration: 0.5s;
 }
 
 /*price on playstation games*/
@@ -626,47 +500,6 @@ a {
   padding: 5px 100px 5px 10px;
 }
 
-/*Nintendo switch arrows*/
-#sw-l-arrow {
-  border: 6px solid #FF1A1A;
-  background-color: #000000;
-}
-#sw-l-arrow::after {
-  border-top: 6px solid #FF1A1A;
-  border-right: 6px solid #FF1A1A;
-}
-#sw-l-arrow:hover {
-  border: 6px solid #ffffff;
-  background-color: #FF1A1A;
-  transition-duration: 0.5s;
-}
-#sw-l-arrow:hover:after {
-  border-top: 6px solid #ffffff;
-  border-right: 6px solid #ffffff;
-  margin-left: 14px;
-  transition-duration: 0.5s;
-}
-
-#sw-r-arrow {
-  border: 6px solid #FF1A1A;
-  background-color: #000000;
-}
-#sw-r-arrow::after {
-  border-top: 6px solid #FF1A1A;
-  border-right: 6px solid #FF1A1A;
-}
-#sw-r-arrow:hover {
-  border: 6px solid #ffffff;
-  background-color: #FF1A1A;
-  transition-duration: 0.5s;
-}
-#sw-r-arrow:hover:after {
-  border-top: 6px solid #ffffff;
-  border-right: 6px solid #ffffff;
-  margin-left: 18px;
-  transition-duration: 0.5s;
-}
-
 /*nintendo switch media querries*/
 @media (max-width: 1286px) {
   #swgame5 {
@@ -787,76 +620,5 @@ a {
 @media (max-width: 360px) {
   .swline {
     width: 100vw;
-  }
-}
-/*end of switch media querries*/
-/**/
-/*media querries for side arrows*/
-@media (max-width: 1286px) {
-  .right-arrow {
-    right: 11%;
-  }
-  .left-arrow {
-    left: 11%;
-  }
-}
-
-@media (max-width: 1080px) {
-  .right-arrow {
-    right: 16%;
-  }
-  .left-arrow {
-    left: 15.5%;
-  }
-}
-
-@media (max-width: 850px) {
-  .right-arrow {
-    right: 18%;
-  }
-  .left-arrow {
-    left: 18%;
-  }
-}
-
-@media (max-width: 768px) {
-  .right-arrow {
-    right: 21%;
-  }
-  .right-arrow#sw-r-arrow {
-    right: 21%;
-  }
-  .left-arrow {
-    left: 21%;
-  }
-  .left-arrow#sw-l-arrow {
-    left: 21%;
-  }
-}
-
-@media (max-width: 600px) {
-  .right-arrow {
-    right: 31%;
-  }
-  .right-arrow#sw-r-arrow {
-    right: 31%;
-  }
-
-  .left-arrow {
-    left: 30%;
-  }
-  .left-arrow#sw-l-arrow {
-    left: 30%;
-  }
-}
-
-@media (max-width: 360px) {
-  .right-arrow {
-    visibility: hidden;
-    display: none;
-  }
-  .left-arrow {
-    visibility: hidden;
-    display: none;
   }
 }
