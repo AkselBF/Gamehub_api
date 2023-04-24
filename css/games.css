@@ -73,7 +73,7 @@ a {
   width: 100vw;
   height: 600px;
   top: 200px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 30px 0;
   overflow: hidden;
 }
 
@@ -122,6 +122,38 @@ a {
   bottom: -23px;
   right: 20px;
   padding: 5px 100px 5px 10px;
+}
+
+/*where you are in each section (instead of arrows)*/
+.dots {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin: 30px auto 10px auto;
+}
+
+.l-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #3ED3F3;
+  border-radius: 25%;
+  margin: 25px 10px 0 0;
+  display: inline-block;
+}
+.m-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #7B7C7D;
+  border-radius: 25%;
+  margin: 25px 10px 0 10px;
+  display: inline-block;
+}
+.r-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #7B7C7D;
+  border-radius: 25%;
+  margin: 25px 0 0 10px;
+  display: inline-block;
 }
 
 /*playbox media querries*/
@@ -268,7 +300,7 @@ a {
   width: 100vw;
   height: 600px;
   top: 950px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 30px 0;
   overflow: hidden;
 }
 
@@ -449,7 +481,7 @@ a {
   width: 100vw;
   height: 600px;
   top: 1705px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 30px 0;
   overflow: hidden;
 }
 
